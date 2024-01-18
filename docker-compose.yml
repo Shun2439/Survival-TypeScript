@@ -9,6 +9,7 @@ services:
       - .env
     volumes:
       - ./src:/app/src
+      - ./pages:/app/pages
       - ./public:/app/public
       - node_modules:/app/node_modules
     restart: always

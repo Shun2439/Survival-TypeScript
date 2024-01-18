@@ -8,6 +8,7 @@ RUN if [ -f yarn.lock ]; then yarn --frozen-lockfile; \
     fi
 
 COPY src ./src
+COPY pages ./pages
 COPY public ./public
 COPY next.config.js .
 COPY tsconfig.json .
